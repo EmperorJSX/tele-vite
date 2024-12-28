@@ -1,0 +1,37 @@
+{
+  "name": "tele-vite",
+  "version": "0.0.1",
+  "module": "index.ts",
+  "description": "A universal framework for building Telegram bots with a CLI like Vite.",
+  "author": "Emperor JS",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "homepage": "https://github.com/EmperorJSX/tele-vite",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "create-tele-vite": "dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build ./src/cli/ --outdir ./dist/ --target node",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "telegraf",
+    "telegram",
+    "cli",
+    "tele-vite"
+  ],
+  "dependencies": {
+    "chalk": "^5.4.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.2.0",
+    "strip-ansi": "^7.1.0"
+  }
+}

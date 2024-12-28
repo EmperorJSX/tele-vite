@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon",
+  "ignore": ["src/i18n/translate"],
+  "exec": "bun index.ts",
+  "delay": 2500
+}
