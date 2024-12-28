@@ -15,12 +15,8 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "bin": {
-    "create-tele-vite": "dist/index.js"
-  },
   "scripts": {
-    "build": "bun build ./src/cli/ --outdir ./dist/ --target node",
-    "start": "node dist/index.js"
+    "start": "bun ./src/cli"
   },
   "keywords": [
     "telegraf",
